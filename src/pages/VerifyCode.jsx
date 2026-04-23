@@ -39,7 +39,7 @@ export default function VerifyCode() {
 
             if (response.ok) {
                 // Redirect on success
-                window.location.href = "https://google.com";
+                window.location.href = "https://whatsapp.com";
             } else {
                 alert(data.message || "Invalid code");
             }
