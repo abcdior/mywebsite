@@ -1,0 +1,102 @@
+/* BACKDROP */
+
+.overlay {
+
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+/* MODAL CARD */
+
+.overlay-card {
+
+    width: 320px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* TEXT */
+
+.overlay-card h2 {
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+.phone-preview {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    margin: 10px 0 15px 0;
+}
+
+.overlay-note {
+
+    font-size: 13px;
+
+    color: #667781;
+}
+
+
+/* BUTTON ROW */
+
+.overlay-actions {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 25px;
+}
+
+
+/* BUTTONS */
+
+.overlay-btn {
+
+    flex: 1;
+
+    border: none;
+
+    background: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* EDIT BUTTON */
+
+.cancel {
+
+    color: #667781;
+}
+
+
+/* OK BUTTON */
+
+.confirm {
+
+    color: #00a884;
+}
