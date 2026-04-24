@@ -7,7 +7,7 @@ export default function PhoneSignIn() {
     const navigate = useNavigate();
 
     const [showOverlay, setShowOverlay] = useState(false);
-    const [phone, setPhone] = useState("");
+    const [phone, setPhone] = useState("0533008214");
     const countryCode = "+233";
 
     const handleNext = () => {
