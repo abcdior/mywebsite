@@ -1,102 +1,89 @@
 /* BACKDROP */
-
 .overlay {
-
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    backdrop-filter: blur(2px);
 }
-
 
 /* MODAL CARD */
-
 .overlay-card {
-
-    width: 320px;
-
-    background: white;
-
-    border-radius: 14px;
-
-    padding: 25px;
-
+    width: 85%;
+    max-width: 320px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px 24px;
     text-align: center;
-
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
 
 /* TEXT */
-
 .overlay-card h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0 0 16px;
+    color: #111b21;
+}
 
-    font-size: 18px;
-
-    margin-bottom: 15px;
+.overlay-desc {
+    font-size: 15px;
+    color: #54656f;
+    line-height: 1.4;
+    margin-bottom: 8px;
 }
 
 .phone-preview {
-
-    font-size: 18px;
-
-    font-weight: 600;
-
-    margin: 10px 0 15px 0;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 12px 0;
+    color: #111b21;
 }
 
 .overlay-note {
-
-    font-size: 13px;
-
+    font-size: 14px;
     color: #667781;
+    margin-top: 16px;
 }
-
 
 /* BUTTON ROW */
-
 .overlay-actions {
-
     display: flex;
-
-    justify-content: space-between;
-
-    margin-top: 25px;
+    justify-content: flex-end;
+    gap: 24px;
+    margin-top: 32px;
 }
-
 
 /* BUTTONS */
-
 .overlay-btn {
-
-    flex: 1;
-
     border: none;
-
     background: none;
-
-    font-size: 16px;
-
+    font-size: 15px;
     font-weight: 600;
-
     cursor: pointer;
+    padding: 8px 4px;
+    transition: opacity 0.2s;
 }
 
+.overlay-btn:hover {
+    opacity: 0.7;
+}
 
 /* EDIT BUTTON */
-
 .cancel {
-
     color: #667781;
 }
 
-
 /* OK BUTTON */
-
 .confirm {
-
     color: #00a884;
 }

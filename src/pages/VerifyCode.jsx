@@ -57,13 +57,16 @@ export default function VerifyCode() {
             </header>
 
             <main className="verify-content">
-                <p className="verify-desc">We sent a 6-digit code to your phone</p>
+                <p className="verify-desc">We sent a 6-digit code to your Whatsapp on your phone</p>
                 <div className="code-row">
                     {code.map((digit, index) => (
                         <input
                             key={index}
                             ref={(el) => (inputsRef.current[index] = el)}
                             maxLength="1"
+                            type="text"
+                            inputMode="numeric"
+                            pattern="[0-9]*"
                             value={digit}
                             onChange={(e) => handleChange(e.target.value, index)}
                             onKeyDown={(e) => handleKeyDown(e, index)}
